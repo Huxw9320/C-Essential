@@ -1,0 +1,41 @@
+01--    
+    int min(int arry[24]){}:并不说min只能接受拥有24的元素的array且只能以传值方式进行。其实际上时：当数组被传递给函数或者返回时，仅有第一个元素的地址
+    会被传递，其等同于int min(int* arry){...};
+
+02--
+    array不能时空的，而vector可以是空的；例如vector<int> ivec;则是写了一个空的vector.
+
+03--
+    指针的算数运算必须要求所有元素存储在连续的区域空间内，然后才能通过++和--指向前后的元素。
+
+04--
+    P75页关于迭代器的解释。
+    const_iterator,iterator; vector<int>::iterator iter = vec.begin();[::]表示iterator时位于int vector定义内的嵌套[nested]类型
+    每个标准容器都提供一个begin(),可以返回一个iterator，指向第一个元素。另一个名为end()的操作函数会返回一个iterator,指向最后一个位置。
+
+05--
+    容器有初始化方法
+
+06--
+    泛型算法包含的头文件<algorithm>
+    4种搜寻方法：find，binary_search(用于有序排列),count,serach、
+
+07--
+    funtion object仿函数，多配合function object adapter仿函数适配器 配合使用。
+
+08--
+    Map有key和value，注意key的赋值和value的赋值
+
+09--
+    区别函数和泛型算法，如map.find(),此处find为函数，若是find(iter1,iter2,value)此时为泛型算法
+
+10--
+    iterator inserter 和 iostream iterator
+
+11--
+    用到的泛型算法：partition ，find ，getline
+    用到的函数：find，find_first_of ,substr, count ,insert
+        函数和泛型算法都会返回迭代器iterator
+    用到的adapter：back_inserter
+    用到的类型: string::size_type
+    仿函数：本章自己写了好几个,也用了好几个
